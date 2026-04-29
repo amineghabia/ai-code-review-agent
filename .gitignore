@@ -5,3 +5,4 @@ __pycache__/
 *.md
 !README.md
 notes.txt
+.ipynb_checkpoints/
