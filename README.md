@@ -2,7 +2,7 @@
 
 An autonomous AI agent that automatically reviews Python code on every Pull Request and posts a structured analysis as a comment.
 
-Built with **LangGraph**, **LangChain**, and **Groq API** — deployed as a **GitHub Action**.
+Built with **LangGraph**, **LangChain**, and **Groq API**, deployed as a **GitHub Action**.
 
 ![AI Code Review bot commenting on a PR](docs/Screenshot%20review%20code%20agent.jpeg)
 
