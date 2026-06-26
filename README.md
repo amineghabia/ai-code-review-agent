@@ -14,10 +14,10 @@ Every time a Pull Request is opened or updated, the agent:
 
 1. Detects all modified `.py` files in the PR
 2. Runs 4 specialized analysis tools on each file:
-   - 🔴 **Bug detection** , logic errors, unhandled edge cases, broad exceptions
-   - 🟡 **Security audit** , hardcoded credentials, `eval()` usage, injection risks
-   - 🔵 **Style review** , PEP8 violations, naming, function complexity
-   - ✅ **Refactoring suggestions** , duplication, structure improvements
+   - 🔴 **Bug detection**: logic errors, unhandled edge cases, broad exceptions
+   - 🟡 **Security audit**: hardcoded credentials, `eval()` usage, injection risks
+   - 🔵 **Style review**: PEP8 violations, naming, function complexity
+   - ✅ **Refactoring suggestions**: duplication, structure improvements
 3. Posts a structured Markdown report as a PR comment
 
 ---
