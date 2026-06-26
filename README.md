@@ -14,10 +14,10 @@ Every time a Pull Request is opened or updated, the agent:
 
 1. Detects all modified `.py` files in the PR
 2. Runs 4 specialized analysis tools on each file:
-   - 🔴 **Bug detection** — logic errors, unhandled edge cases, broad exceptions
-   - 🟡 **Security audit** — hardcoded credentials, `eval()` usage, injection risks
-   - 🔵 **Style review** — PEP8 violations, naming, function complexity
-   - ✅ **Refactoring suggestions** — duplication, structure improvements
+   - 🔴 **Bug detection** , logic errors, unhandled edge cases, broad exceptions
+   - 🟡 **Security audit** , hardcoded credentials, `eval()` usage, injection risks
+   - 🔵 **Style review** , PEP8 violations, naming, function complexity
+   - ✅ **Refactoring suggestions** , duplication, structure improvements
 3. Posts a structured Markdown report as a PR comment
 
 ---
@@ -40,7 +40,7 @@ LangGraph agent (ReAct loop)
 Structured Markdown report posted as PR comment
 ```
 
-The agent uses **Groq API** (llama-3.3-70b) in production and **Ollama** (qwen2.5:3b) for local development — switching automatically based on the `GROQ_API_KEY` environment variable.
+The agent uses **Groq API** (llama-3.3-70b) in production and **Ollama** (qwen2.5:3b) for local development , switching automatically based on the `GROQ_API_KEY` environment variable.
 
 ---
 
@@ -68,7 +68,7 @@ The report is printed to stdout and saved as `review_<filename>.md`.
 1. Copy `.github/workflows/code-review.yml` to your repository
 2. Go to **Settings → Secrets and variables → Actions**
 3. Add a secret named `GROQ_API_KEY` with your [Groq API key](https://console.groq.com)
-4. Open a Pull Request — the bot will comment automatically
+4. Open a Pull Request , the bot will comment automatically
 
 ---
 
@@ -80,7 +80,7 @@ The report is printed to stdout and saved as `review_<filename>.md`.
 | [LangChain](https://github.com/langchain-ai/langchain) | LLM interface & tool definitions |
 | [Groq API](https://console.groq.com) | LLM in production (llama-3.3-70b) |
 | [Ollama](https://ollama.com) | LLM for local development (qwen2.5:3b) |
-| GitHub Actions | CI/CD — triggers on every Pull Request |
+| GitHub Actions | CI/CD , triggers on every Pull Request |
 
 ---
 
